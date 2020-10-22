@@ -1,14 +1,134 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.description {
+  width: 50%;
+  border: 4px solid #ccc;
+  opacity: 0.6;
+  font-weight: 400;
+  font-size: 0.8em;
+  z-index: 0;
 }
+/* ----------------------- */
 
-.nav {
-}
+/* Main section */
 
 .main {
+  padding: 0 10em;
+}
+
+.hero {
+  background-image: url(/assets/images/hero-img.jpg),
+    -webkit-gradient(linear, left top, left bottom, color-stop(12%, transparent), color-stop(12%, rgba(39, 42, 49, 0.2)));
+  background-image: url(/assets/images/hero-img.jpg),
+    linear-gradient(transparent 12%, rgba(39, 42, 49, 0.2) 12%);
+  background-size: cover;
+  background-attachment: fixed !important;
+  background-position: center;
+  padding: 8em 0 0 5%;
+  height: 90vh;
+  font-weight: 900;
+}
+
+.featured-course {
+  background: url(/assets/images/bg.jpg) 0 0 no-repeat;
+  background-size: cover;
+  color: #ccc;
+  padding: 5em;
+  height: auto;
+}
+
+.featured-course .cols {
+  background-color: #fff;
+  color: #000;
+  width: 100%;
+  border: px solid #ccc;
+  opacity: 0.9;
+  border: 1px solid;
+}
+
+.featured-course .cols:hover {
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0);
+  border: 1px solid red;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.course-title {
+  -webkit-box-flex: 1;
+  flex: 1;
+}
+
+.space {
+  -webkit-box-flex: 1;
+  flex: 2;
+}
+
+.course-info {
+  -webkit-box-flex: 1;
+  flex: 4;
+}
+
+.view-all-course {
+  border-bottom: 1px solid #ccc;
+  text-decoration: none;
+  color: #ccc;
+}
+
+.wrapper {
+  margin: 0 2%;
+}
+.tutors small {
+  color: red;
+}
+
+/* img::before,
+img::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+}
+
+img::after {
+  right: 0;
+  bottom: 0;
+  border-right: 3px double #ec5242;
+  border-bottom: 3px double #ec5242;
+} */
+
+.tutors img {
+  width: 100%;
+  height: auto;
+}
+
+.tutors hr {
+  background-color: red;
+  width: 2%;
+  margin: 0 auto;
+  padding: 0.123em;
+}
+
+.client-section {
+  margin: 0 25%;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-row: 90px;
+  grid-gap: 1em;
+}
+
+.client-item hr {
+  background-color: red;
+  width: 2%;
+  margin: 0 auto;
+  padding: 0.123em;
 }
 
 .footer {
+  display: flex;
+  align-items: center;
+  padding: 2em 5%;
+  background-color: #f1f1f1;
 }
