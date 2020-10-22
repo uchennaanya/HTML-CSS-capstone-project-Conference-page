@@ -96,7 +96,7 @@ img {
   background: url(/assets/images/bg.jpg) 0 0 no-repeat;
   background-size: cover;
   color: #ccc;
-  padding: 5em;
+  padding: 5%;
   height: auto;
 }
 
@@ -104,16 +104,22 @@ img {
   background-color: #fff;
   color: #000;
   width: 100%;
-  border: px solid #ccc;
   opacity: 0.9;
-  border: 1px solid;
+  margin: 0.2em 0;
 }
 
+.featured-course p {
+  width: 200px;
+}
 .featured-course .cols:hover {
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0);
   border: 1px solid red;
   opacity: 0.6;
   cursor: pointer;
+}
+
+.featured-course .w {
+  width: 100%;
 }
 
 img {
@@ -131,10 +137,10 @@ img {
   flex: 2;
 }
 
-.course-info {
+/* .course-info {
   -webkit-box-flex: 1;
   flex: 4;
-}
+} */
 
 .view-all-course {
   border-bottom: 1px solid #ccc;
@@ -198,8 +204,66 @@ img::after {
   background-color: #f1f1f1;
 }
 
+@media only screnn and (min-width: 768px) {
+  .wrapper {
+    margin: 0;
+  }
+
+  .featured-course {
+    padding: 1% 2.5% 0 1%;
+    height: auto;
+  }
+
+  .featured-course .w {
+    width: 100px;
+  }
+
+  .hero {
+    padding: 8em 1% 0 1%;
+    height: 90vh;
+    font-weight: 900;
+  }
+
+  .cols {
+    width: 50%;
+  }
+
+  .description {
+    width: 100%;
+    border: 4px solid #ccc;
+    opacity: 0.6;
+    font-weight: 400;
+    font-size: 0.8em;
+    z-index: 0;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .wrapper {
     margin: 0;
+  }
+
+  .featured-course {
+    padding: 1% 2.5% 0 1%;
+    height: auto;
+  }
+
+  .featured-course .w {
+    width: 100px;
+  }
+
+  .hero {
+    padding: 8em 1% 0 1%;
+    height: 90vh;
+    font-weight: 900;
+  }
+
+  .description {
+    width: 100%;
+    border: 4px solid #ccc;
+    opacity: 0.6;
+    font-weight: 400;
+    font-size: 0.8em;
+    z-index: 0;
   }
 }

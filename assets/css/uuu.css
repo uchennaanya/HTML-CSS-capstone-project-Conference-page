@@ -97,9 +97,6 @@ figure {
     background: url(/assets/images/bg.jpg) 0 0 no-repeat;
     background-size: cover;
     color: #ccc;
-    padding: 1em;
-    margin: 0 auto;
-    height: auto;
   }
 
   .client-logo {
