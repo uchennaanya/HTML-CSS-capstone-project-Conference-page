@@ -1,7 +1,4 @@
-.logo {
-  width: 100%;
-  height: auto;
-}
+
 
 /* stick to top on scroll */
 
@@ -20,36 +17,6 @@
   border-bottom: 3px double #ec5242;
 }
 
-.clients-section-wrapper {
-  text-align: center;
-}
-
-.clients-section-wrapper img {
-  width: 100px;
-}
-
-.client-section {
-  display: flex;
-  justify-content: space-around;
-
-  align-items: center;
-  padding-bottom: 2em;
-  flex-wrap: wrap;
-}
-
-.client-logo {
-  border: 2px solid;
-  width: 200px;
-  display: inline-block;
-  height: auto;
-  padding: 0;
-}
-
-figure {
-  width: 10%;
-  display: inline-block;
-  color: #ec5242;
-}
 
 .client-item .client-logo {
   -webkit-filter: grayscale(1);
@@ -58,76 +25,4 @@ figure {
   transition: -webkit-filter 0.2s linear;
   transition: filter 0.2s linear;
   transition: filter 0.2s linear, -webkit-filter 0.2s linear;
-
-@media only screen and (min-width: 768px) {
-  .footer {
-    display: flex;
-    align-items: center;
-    padding: 2em 5%;
-    background-color: #f1f1f1;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .nav-wrapper {
-    padding: 0.5em 1em;
-  }
-
-  .top-nav {
-    padding: 0 2%;
-  }
-
-  .hero {
-    text-align: left;
-    padding: 8em 1em 10em 1em;
-    height: 90%;
-    font-weight: 900;
-  }
-
-  .description {
-    width: 100%;
-    border: 4px solid #ccc;
-    opacity: 0.6;
-    font-weight: 400;
-    font-size: 0.8em;
-    z-index: 0;
-  }
-
-  .featured-course {
-    background: url(/assets/images/bg.jpg) 0 0 no-repeat;
-    background-size: cover;
-    color: #ccc;
-  }
-
-  .client-logo {
-    width: 100%;
-    display: inline-block;
-    height: auto;
-    padding: 1em;
-  }
-
-  .client-section {
-    display: flex;
-    justify-content: space-around;
-
-    align-items: center;
-    padding-bottom: 2em;
-    flex-wrap: wrap;
-    /* margin-right: 5%; */
-  }
-
-  .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2em 1em;
-    background-color: #f1f1f1;
-  }
-  .client-logo {
-    display: flex;
-    width: 10em;
-    display: inline-block;
-    height: auto;
-    padding: 1em;
-  }
 }
