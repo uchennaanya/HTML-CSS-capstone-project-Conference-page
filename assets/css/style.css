@@ -1,3 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.top-nav {
+  padding: 0 5%;
+}
+
+.top-nav a {
+  color: #fff;
+  padding: 1em 0 1em 0.9em;
+}
+
+.top-nav i {
+  padding: 1em 0 1em 0.9em;
+}
+
+#myHeader {
+  z-index: 999;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.font-2x {
+  font-size: 2rem;
+}
+
+.nav-wrapper {
+  padding: 0.5em 5%;
+}
+
+.stickTop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav a {
+  padding: 0 0 0 0.3em;
+  color: dimgray;
+}
+
 .description {
   width: 50%;
   border: 4px solid #ccc;
@@ -6,7 +54,24 @@
   font-size: 0.8em;
   z-index: 0;
 }
-/* ----------------------- */
+
+.featured-course h5 {
+  font-weight: bold;
+  color: #fd5534;
+  font-size: 1.5rem;
+}
+
+.featured-course hr {
+  background-color: red;
+  width: 5%;
+  margin: 0 auto;
+  padding: 0.123em;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
 
 /* Main section */
 
@@ -78,7 +143,7 @@ img {
 }
 
 .wrapper {
-  margin: 0 2%;
+  margin: 0 5%;
 }
 .tutors small {
   color: red;
@@ -131,4 +196,10 @@ img::after {
   align-items: center;
   padding: 2em 5%;
   background-color: #f1f1f1;
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    margin: 0;
+  }
 }
