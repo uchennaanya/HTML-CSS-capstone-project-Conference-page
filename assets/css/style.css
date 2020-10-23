@@ -27,6 +27,10 @@ a:hover {
   text-decoration: none;
 }
 
+.nav a {
+  color: dimgray;
+}
+
 .font-2x {
   font-size: 2rem;
 }
@@ -39,28 +43,6 @@ a:hover {
   position: fixed;
   top: 0;
   width: 100%;
-}
-
-.description {
-  width: 50%;
-  border: 4px solid #ccc;
-  opacity: 0.6;
-  font-weight: 400;
-  font-size: 0.8em;
-  z-index: 0;
-}
-
-.featured-course h5 {
-  font-weight: bold;
-  color: #fd5534;
-  font-size: 1.5rem;
-}
-
-.featured-course hr {
-  background-color: red;
-  width: 5%;
-  margin: 0 auto;
-  padding: 0.123em;
 }
 
 img {
@@ -81,12 +63,77 @@ img {
   font-weight: 900;
 }
 
+/* About page */
+
+.abt-hero {
+  background-image: url(/assets/images/abt-img.jpg),
+    -webkit-gradient(linear, left top, left bottom, color-stop(12%, transparent), color-stop(12%, rgba(39, 42, 49, 0.2)));
+  background-image: url(/assets/images/abt-img.jpg),
+    linear-gradient(transparent 12%, rgba(39, 42, 49, 0.2) 12%);
+  background-size: cover;
+  background-attachment: fixed !important;
+  background-position: center;
+  text-align: center;
+  padding: 5em 0;
+}
+
+.abt {
+  text-align: center;
+  height: auto;
+}
+
+#tutors img {
+width: 100%;
+height: auto;
+display: flex;
+}
+
+.abt hr {
+  width: 5%;
+  margin: 0 auto;
+  background-color: red;
+}
+
+.abt-description {
+  width: 50%;
+  border: 4px solid #f1f1f1;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+  z-index: 0;
+  margin: 0 auto;
+}
+
+.description {
+  width: 50%;
+  border: 4px solid #f1f1f1;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+  z-index: 0;
+}
+
 .featured-course {
   background: url(/assets/images/bg.jpg) 0 0 no-repeat;
   background-size: cover;
   color: #ccc;
   padding: 5%;
   height: auto;
+}
+
+.featured-course h5 {
+  font-weight: bold;
+  color: #fd5534;
+  font-size: 1.5rem;
+}
+
+.featured-course hr {
+  background-color: red;
+  width: 5%;
+  margin: 0 auto;
+  padding: 0.123em;
 }
 
 .featured-course .cols {
@@ -98,7 +145,7 @@ img {
 }
 
 .featured-course .cols:hover {
-  box-shadow: 9px 4px 5px rgba(163, 14, 14, 0.9);
+  box-shadow: 1px 1px 2px 8px rgba(0, 0 0, 0.3);
   opacity: 0.6;
   cursor: pointer;
 }
@@ -106,6 +153,10 @@ img {
 .featured-course .w {
   width: 100%;
   margin: 0 auto;
+}
+
+.course-info {
+  width: 100%;
 }
 
 .view-all-course {
@@ -170,14 +221,26 @@ img::after {
   background-color: #f1f1f1;
 }
 
-@media (min-width: 768px) {
+.featured-course p {
+  width: 100% !important;
+  height: 110px;
+  margin-top: 0 !important;
+}
+
+.featured-course .w {
+  width: 100% !important;
+}
+
+@media only screen and (min-width: 768px) and (max-device-width: 992px) {
   .nav a {
     padding: 0 0 0 0.1em;
     color: dimgray;
   }
 
-  .wrapper {
-    margin: 5%;
+  .hero {
+    padding: 4em 0 0 5%;
+    height: 60vh !important;
+    font-weight: 900;
   }
 
   .featured-course {
@@ -185,10 +248,15 @@ img::after {
     height: auto;
   }
 
+  .featured-course p {
+    width: 100% !important;
+    height: auto;
+  }
+
   .description {
     width: 50%;
     border: 4px solid #ccc;
-    opacity: 0.6;
+    /* opacity: 0.6; */
     font-weight: 400;
     font-size: 0.8em;
     z-index: 0;
@@ -209,13 +277,24 @@ img::after {
     width: 100px;
   }
 
+  .featured-course .cols {
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+    opacity: 0.9;
+    margin: 0.2em 0;
+  }
+
   .featured-course p {
     width: 200px;
+    width: 100% !important;
+    height: auto;
+    padding-bottom: 5em !important;
   }
 
   .hero {
-    padding: 8em 1% 0 1%;
-    height: 90vh;
+    padding: 1em 1% 0 1%;
+    max-height: 60vh;
     font-weight: 900;
   }
 
