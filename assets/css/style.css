@@ -20,7 +20,7 @@
 
 #myHeader {
   z-index: 999;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 .active {
@@ -64,9 +64,8 @@ img {
 }
 
 .hero {
-  background-image: url(/assets/images/hero-img.jpg),
-    -webkit-gradient(linear, left top, left bottom, color-stop(12%, transparent), color-stop(12%, rgba(39, 42, 49, 0.2)));
-  background-image: url(/assets/images/hero-img.jpg),
+  background-image:
+    url(/assets/images/hero-img.jpg),
     linear-gradient(transparent 12%, rgba(39, 42, 49, 0.2) 12%);
   background-size: cover;
   background-attachment: fixed !important;
@@ -85,7 +84,6 @@ img {
   height: 7px;
   width: 7px;
   background-color: #ec5242;
-  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   top: 5px;
 }
@@ -102,12 +100,12 @@ img {
   transform: rotate(45deg);
 }
 
-.cube .v {
+.v {
   transform: rotate(320deg);
   display: inline-block;
 }
 
-.v {
+.cube .v {
   transform: rotate(320deg);
   display: inline-block;
 }
@@ -121,19 +119,8 @@ img {
   margin: auto;
   min-width: 80%;
   border: 10px solid transparent;
-  -o-border-image: repeating-linear-gradient(
-      -45deg,
-      #ec5242 0,
-      #ec5242 1em,
-      transparent 1em,
-      transparent 2em,
-      #272a31 2em,
-      #272a31 3em,
-      transparent 3em,
-      transparent 4em
-    )
-    20 repeat;
-  border-image: repeating-linear-gradient(
+  border-image:
+    repeating-linear-gradient(
       -45deg,
       #ec5242 0,
       #ec5242 1em,
@@ -156,9 +143,8 @@ img {
 /* About page */
 
 .abt-hero {
-  background-image: url(/assets/images/abt-img.jpg),
-    -webkit-gradient(linear, left top, left bottom, color-stop(12%, transparent), color-stop(12%, rgba(0, 0, 0, 0.5)));
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(/assets/images/abt-img.jpg) 0 0 no-repeat;
   background-size: cover;
   color: #fff;
@@ -170,14 +156,16 @@ img {
 }
 
 .project1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/assets/images/project1.jpg) 0 0 no-repeat;
   background-size: cover;
   padding: 5em 0;
 }
 
 .project2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/assets/images/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg) 0 0 no-repeat;
   background-size: cover;
   padding: 5em 0;
@@ -188,10 +176,10 @@ img {
   height: auto;
 }
 
-#tutors img {
+.tutors img {
   width: 100%;
+  margin: 1em 0;
   height: auto;
-  display: flex;
 }
 
 .abt hr {
@@ -251,14 +239,9 @@ img {
 }
 
 .featured-course .cols:hover {
-  box-shadow: 1px 1px 2px 8px rgba(0, 0 0, 0.3);
+  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.3);
   opacity: 0.6;
   cursor: pointer;
-}
-
-.featured-course .w {
-  width: 100%;
-  margin: 0 auto;
 }
 
 .course-info {
@@ -274,52 +257,34 @@ img {
 .wrapper {
   margin: 0 5%;
 }
+
 .tutors small {
   color: red;
 }
-
-/* Before */
-.tutors-img::before {
-  left: 0;
-  top: 0;
-  border-left: 3px dotted #ec5242;
-  border-top: 3px dotted #ec5242;
-}
-
-.tutors-img::before,
-.tutors-img::after {
-  content: "";
-  position: absolute;
-  height: 20px;
-  width: 20px;
-}
-
-/* ------------------------- */
-
-/* After */
 
 .tutors-img::after {
   right: 0;
   bottom: 0;
   border-right: 3px dotted #ec5242;
   border-bottom: 3px dotted #ec5242;
-}
-
-.tutors-img::before,
-.tutors-img::after {
   content: "";
   position: absolute;
   height: 20px;
   width: 20px;
 }
 
-/* ------------------------- */
-
-.tutors img {
-  width: 100%;
-  margin: 1em 0;
-  height: auto;
+.tutors-img::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-left: 3px dotted #ec5242;
+  border-top: 3px dotted #ec5242;
+  left: 0;
+  top: 0;
 }
+
+/* ------------------------- */
 
 .tutors hr {
   background-color: red;
@@ -332,7 +297,6 @@ img {
   margin: 0 25%;
   display: grid;
   grid-template-columns: auto auto auto auto auto;
-  grid-row: 90px;
   grid-gap: 1em;
 }
 
@@ -360,7 +324,7 @@ img {
   width: 100% !important;
 }
 
-@media only screen and (min-width: 768px) and (max-device-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   .nav a {
     padding: 0 0 0 0.1em;
     color: dimgray;
@@ -405,19 +369,9 @@ img {
     width: 100px;
   }
 
-  .featured-course .cols {
-    background-color: #fff;
-    color: #000;
-    width: 100%;
-    opacity: 0.9;
-    margin: 0.2em 0;
-  }
-
   .featured-course p {
-    width: 200px;
     width: 100% !important;
     height: auto;
-    padding-bottom: 5em !important;
   }
 
   .hero {
@@ -438,9 +392,11 @@ img {
   .abt-hero {
     padding: 3em 0 0 0;
   }
+
   .abt-description {
     width: 100%;
   }
+
   .step {
     width: 100%;
     margin: 0 auto;
