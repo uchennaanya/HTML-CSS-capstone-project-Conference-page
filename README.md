@@ -10,7 +10,7 @@ This website is an online learning platform that provides user and learners reso
 
 This project is about designing/cloning of a e-learning platform website
 
-![screenshot](./assets/images/screenshot.png)
+![screenshot](./assets/images/site-screenshot.png)
 
 The features of this project are listed below:
 
