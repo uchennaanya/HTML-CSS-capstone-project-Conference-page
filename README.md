@@ -14,9 +14,9 @@ This project is about designing/cloning of a e-learning platform website
 
 The features of this project are listed below:
 
-1. The website is completely responsive, mobile and screen sizes above 768px.
+1. The website is completely responsive, mobile, and screen sizes above 768px.
 
-2. The site contains information for intructors:
+2. The site contains information for instructors:
 
 - Common information on every page.
 
@@ -26,7 +26,7 @@ The features of this project are listed below:
 - Information on the Homepage.
 
   - Banner image with information regarding how to use the e-learning platform.
-  - Infomation about the e-learning platform.
+  - Information about the e-learning platform.
   - Featured courses.
   - Partners and who supported the program.
 
@@ -37,8 +37,8 @@ The features of this project are listed below:
   - Community project.
 
 - Information on the plan page:
-  - Options to select plan for basic, intermediate and advance.
-  - Options to choose different plan based on the price chosed.
+  - Options to select a plan for basic, intermediate, and advance.
+  - Options to choose different plans based on the price chosen.
 
 ## Built With
 
