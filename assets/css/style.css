@@ -23,6 +23,19 @@
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 }
 
+.active {
+  color: red !important;
+}
+
+#myHeader .btn {
+  border: 4px solid red !important;
+}
+
+#myHeader .btn:hover {
+  color: #fff !important;
+  background-color: red;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -63,17 +76,110 @@ img {
   font-weight: 900;
 }
 
+/* Plan page */
+
+.select-ticket .step-text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 7px;
+  width: 7px;
+  background-color: #ec5242;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 5px;
+}
+
+.select-ticket {
+  padding-bottom: 3rem;
+  position: relative;
+}
+
+.cube {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  transform: rotate(45deg);
+}
+
+.cube .v {
+  transform: rotate(320deg);
+  display: inline-block;
+}
+
+.v {
+  transform: rotate(320deg);
+  display: inline-block;
+}
+
+.square {
+  transform: rotate(45deg);
+  display: inline-block;
+}
+
+.plan {
+  margin: auto;
+  min-width: 80%;
+  border: 10px solid transparent;
+  -o-border-image: repeating-linear-gradient(
+      -45deg,
+      #ec5242 0,
+      #ec5242 1em,
+      transparent 1em,
+      transparent 2em,
+      #272a31 2em,
+      #272a31 3em,
+      transparent 3em,
+      transparent 4em
+    )
+    20 repeat;
+  border-image: repeating-linear-gradient(
+      -45deg,
+      #ec5242 0,
+      #ec5242 1em,
+      transparent 1em,
+      transparent 2em,
+      #272a31 2em,
+      #272a31 3em,
+      transparent 3em,
+      transparent 4em
+    )
+    20 repeat;
+}
+
+.step {
+  width: 35%;
+  margin: 0 auto;
+  border-radius: 40px;
+}
+
 /* About page */
 
 .abt-hero {
   background-image: url(/assets/images/abt-img.jpg),
-    -webkit-gradient(linear, left top, left bottom, color-stop(12%, transparent), color-stop(12%, rgba(39, 42, 49, 0.2)));
-  background-image: url(/assets/images/abt-img.jpg),
-    linear-gradient(transparent 12%, rgba(39, 42, 49, 0.2) 12%);
+    -webkit-gradient(linear, left top, left bottom, color-stop(12%, transparent), color-stop(12%, rgba(0, 0, 0, 0.5)));
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/assets/images/abt-img.jpg) 0 0 no-repeat;
   background-size: cover;
+  color: #fff;
   background-attachment: fixed !important;
   background-position: center;
   text-align: center;
+  padding: 4em 0 1em 0;
+  height: 50%;
+}
+
+.project1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/assets/images/project1.jpg) 0 0 no-repeat;
+  background-size: cover;
+  padding: 5em 0;
+}
+
+.project2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/assets/images/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg) 0 0 no-repeat;
+  background-size: cover;
   padding: 5em 0;
 }
 
@@ -83,9 +189,9 @@ img {
 }
 
 #tutors img {
-width: 100%;
-height: auto;
-display: flex;
+  width: 100%;
+  height: auto;
+  display: flex;
 }
 
 .abt hr {
@@ -172,23 +278,46 @@ display: flex;
   color: red;
 }
 
-/* img::before,
-img::after {
+/* Before */
+.tutors-img::before {
+  left: 0;
+  top: 0;
+  border-left: 3px dotted #ec5242;
+  border-top: 3px dotted #ec5242;
+}
+
+.tutors-img::before,
+.tutors-img::after {
   content: "";
   position: absolute;
   height: 20px;
   width: 20px;
 }
 
-img::after {
+/* ------------------------- */
+
+/* After */
+
+.tutors-img::after {
   right: 0;
   bottom: 0;
-  border-right: 3px double #ec5242;
-  border-bottom: 3px double #ec5242;
-} */
+  border-right: 3px dotted #ec5242;
+  border-bottom: 3px dotted #ec5242;
+}
+
+.tutors-img::before,
+.tutors-img::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+}
+
+/* ------------------------- */
 
 .tutors img {
   width: 100%;
+  margin: 1em 0;
   height: auto;
 }
 
@@ -256,7 +385,6 @@ img::after {
   .description {
     width: 50%;
     border: 4px solid #ccc;
-    /* opacity: 0.6; */
     font-weight: 400;
     font-size: 0.8em;
     z-index: 0;
@@ -305,5 +433,18 @@ img::after {
     font-weight: 400;
     font-size: 0.8em;
     z-index: 0;
+  }
+
+  .abt-hero {
+    padding: 3em 0 0 0;
+  }
+  .abt-description {
+    width: 100%;
+  }
+  .step {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em;
+    border-radius: 40px;
   }
 }
