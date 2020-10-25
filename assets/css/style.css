@@ -178,8 +178,9 @@ img {
 
 .tutors img {
   width: 100%;
-  margin: 1em 0;
+  margin: 1em 0 0 0;
   height: auto;
+  display: block !important;
 }
 
 .abt hr {
@@ -262,9 +263,32 @@ img {
   color: red;
 }
 
+/* figure::after {
+  right: 0;
+  bottom: auto;
+  border-right: 3px dotted #ec5242;
+  border-bottom: 3px dotted #ec5242;
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+}
+
+figure::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-left: 3px dotted #ec5242;
+  border-top: 3px dotted #ec5242;
+  left: 0;
+  top: 0;
+} */
+
+
 .tutors-img::after {
   right: 0;
-  bottom: 0;
+  bottom: auto;
   border-right: 3px dotted #ec5242;
   border-bottom: 3px dotted #ec5242;
   content: "";
@@ -343,7 +367,7 @@ img {
 
   .featured-course p {
     width: 100% !important;
-    height: auto;
+    height: 260px !important;
   }
 
   .description {
@@ -358,6 +382,10 @@ img {
 @media only screen and (max-width: 768px) {
   .wrapper {
     margin: 0;
+  }
+
+  .featured-course .w {
+    width: 200px !important;
   }
 
   .featured-course {
