@@ -263,29 +263,6 @@ img {
   color: red;
 }
 
-/* figure::after {
-  right: 0;
-  bottom: auto;
-  border-right: 3px dotted #ec5242;
-  border-bottom: 3px dotted #ec5242;
-  content: "";
-  position: absolute;
-  height: 20px;
-  width: 20px;
-}
-
-figure::before {
-  content: "";
-  position: absolute;
-  height: 20px;
-  width: 20px;
-  border-left: 3px dotted #ec5242;
-  border-top: 3px dotted #ec5242;
-  left: 0;
-  top: 0;
-} */
-
-
 .tutors-img::after {
   right: 0;
   bottom: auto;
@@ -391,10 +368,6 @@ figure::before {
   .featured-course {
     padding: 1% 2.5% 0 1%;
     height: auto;
-  }
-
-  .featured-course .w {
-    width: 100px;
   }
 
   .featured-course p {
