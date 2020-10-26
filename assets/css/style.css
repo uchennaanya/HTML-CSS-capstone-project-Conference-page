@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "cocogoose";
+  src: url("/assets/css/webfontkit/cocogoose_pro-trial-webfont.woff");
+  src:
+    url("/assets/css/webfontkit/cocogoose_pro_ultralight-trial-webfont.woff2") format("woff"),
+    url("/assets/css/webfontkit/cocogoose_pro_italic-trial-webfont.woff2") format("opentype");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -44,6 +52,12 @@ a:hover {
   text-decoration: none;
 }
 
+.featured-course a {
+  color: #fff !important;
+  background-color: red;
+  padding: 1em;
+}
+
 .nav li a {
   color: dimgray;
   margin: 0 0.2em !important;
@@ -69,7 +83,8 @@ img {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
     url(/assets/images/hero-img.jpg);
   background-size: cover;
   background-attachment: fixed !important;
@@ -122,7 +137,8 @@ img {
   margin: auto;
   min-width: 80%;
   border: 10px solid transparent;
-  border-image: repeating-linear-gradient(
+  border-image:
+    repeating-linear-gradient(
       -45deg,
       #ec5242 0,
       #ec5242 1em,
@@ -145,7 +161,8 @@ img {
 /* About page */
 
 .abt-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(/assets/images/abt-img.jpg) 0 0 no-repeat;
   background-size: cover;
   color: #fff;
@@ -157,14 +174,16 @@ img {
 }
 
 .project1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/assets/images/project1.jpg) 0 0 no-repeat;
   background-size: cover;
   padding: 5em 0;
 }
 
 .project2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/assets/images/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg) 0 0 no-repeat;
   background-size: cover;
   padding: 5em 0;
@@ -242,12 +261,6 @@ img {
   box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.3);
   opacity: 0.6;
   cursor: pointer;
-}
-
-.featured-course a {
-  color: #fff !important;
-  background-color: red;
-  padding: 1em;
 }
 
 .featured-course a:hover {
