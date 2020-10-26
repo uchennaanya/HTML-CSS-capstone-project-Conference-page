@@ -5,6 +5,10 @@
   font-family: "Lato", sans-serif;
 }
 
+body {
+  position: relative;
+}
+
 .top-nav {
   padding: 0 5%;
 }
@@ -40,8 +44,9 @@ a:hover {
   text-decoration: none;
 }
 
-.nav a {
+.nav li a {
   color: dimgray;
+  margin: 0 0.2em !important;
 }
 
 .font-2x {
@@ -64,12 +69,10 @@ img {
 }
 
 .hero {
-  background-image:
-    url(/assets/images/hero-img.jpg),
-    linear-gradient(transparent 12%, rgba(39, 42, 49, 0.2) 12%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+    url(/assets/images/hero-img.jpg);
   background-size: cover;
   background-attachment: fixed !important;
-  background-position: center;
   padding: 8em 0 0 5%;
   height: 90vh;
   font-weight: 900;
@@ -119,8 +122,7 @@ img {
   margin: auto;
   min-width: 80%;
   border: 10px solid transparent;
-  border-image:
-    repeating-linear-gradient(
+  border-image: repeating-linear-gradient(
       -45deg,
       #ec5242 0,
       #ec5242 1em,
@@ -143,8 +145,7 @@ img {
 /* About page */
 
 .abt-hero {
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(/assets/images/abt-img.jpg) 0 0 no-repeat;
   background-size: cover;
   color: #fff;
@@ -156,16 +157,14 @@ img {
 }
 
 .project1 {
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/assets/images/project1.jpg) 0 0 no-repeat;
   background-size: cover;
   padding: 5em 0;
 }
 
 .project2 {
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/assets/images/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg) 0 0 no-repeat;
   background-size: cover;
   padding: 5em 0;
@@ -243,6 +242,20 @@ img {
   box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.3);
   opacity: 0.6;
   cursor: pointer;
+}
+
+.featured-course a {
+  color: #fff !important;
+  background-color: red;
+  padding: 1em;
+}
+
+.featured-course a:hover {
+  color: #fff !important;
+  background-color: red;
+  -webkit-transition: all 0.2s linear;
+  padding: 1.5em;
+  transition: all 0.2s linear;
 }
 
 .course-info {
@@ -332,8 +345,8 @@ img {
   }
 
   .hero {
-    padding: 4em 0 0 5%;
-    height: 60vh !important;
+    padding: 4em 0 2em 5%;
+    height: 60% !important;
     font-weight: 900;
   }
 
@@ -348,7 +361,7 @@ img {
   }
 
   .description {
-    width: 50%;
+    width: 50% !important;
     border: 4px solid #ccc;
     font-weight: 400;
     font-size: 0.8em;
@@ -362,7 +375,7 @@ img {
   }
 
   .featured-course .w {
-    width: 200px !important;
+    width: 100% !important;
   }
 
   .featured-course {
@@ -376,8 +389,8 @@ img {
   }
 
   .hero {
-    padding: 1em 1% 0 1%;
-    max-height: 60vh;
+    padding: 1em 1% 2em 1%;
+    height: 50% !important;
     font-weight: 900;
   }
 
@@ -396,6 +409,12 @@ img {
 
   .abt-description {
     width: 100%;
+  }
+
+  .client-section {
+    margin: 0 5%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
   }
 
   .step {
