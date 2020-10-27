@@ -1,9 +1,10 @@
 @font-face {
   font-family: "cocogoose";
   src: url("/assets/css/webfontkit/cocogoose_pro-trial-webfont.woff");
-  src:
-    url("/assets/css/webfontkit/cocogoose_pro_ultralight-trial-webfont.woff2") format("woff"),
-    url("/assets/css/webfontkit/cocogoose_pro_italic-trial-webfont.woff2") format("opentype");
+  src: url("/assets/css/webfontkit/cocogoose_pro_ultralight-trial-webfont.woff2")
+      format("woff"),
+    url("/assets/css/webfontkit/cocogoose_pro_italic-trial-webfont.woff2")
+      format("opentype");
 }
 
 * {
@@ -36,16 +37,16 @@ body {
 }
 
 .active {
-  color: red !important;
+  color: #EC5242 !important;
 }
 
 #myHeader .btn {
-  border: 4px solid red !important;
+  border: 4px solid #EC5242 !important;
 }
 
 #myHeader .btn:hover {
   color: #fff !important;
-  background-color: red;
+  background-color: #EC5242;
 }
 
 a:hover {
@@ -54,12 +55,17 @@ a:hover {
 
 .featured-course a {
   color: #fff !important;
-  background-color: red;
+  background-color: #EC5242;
   padding: 1em;
 }
 
 .nav li a {
   color: dimgray;
+  margin: 0 0.2em !important;
+}
+
+.nav li a:hover {
+  color: #EC5242;
   margin: 0 0.2em !important;
 }
 
@@ -83,14 +89,17 @@ img {
 }
 
 .hero {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
     url(/assets/images/hero-img.jpg);
   background-size: cover;
   background-attachment: fixed !important;
   padding: 8em 0 0 5%;
   height: 90vh;
   font-weight: 900;
+}
+
+.hero h1, h3 {
+  color: #EC5242;
 }
 
 /* Plan page */
@@ -137,8 +146,7 @@ img {
   margin: auto;
   min-width: 80%;
   border: 10px solid transparent;
-  border-image:
-    repeating-linear-gradient(
+  border-image: repeating-linear-gradient(
       -45deg,
       #ec5242 0,
       #ec5242 1em,
@@ -161,29 +169,33 @@ img {
 /* About page */
 
 .abt-hero {
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.61),
+      rgba(0, 0, 0, 0.63)
+    ),
     url(/assets/images/abt-img.jpg) 0 0 no-repeat;
   background-size: cover;
-  color: #fff;
   background-attachment: fixed !important;
   background-position: center;
+  color: #fff;
   text-align: center;
   padding: 4em 0 1em 0;
   height: 50%;
 }
 
+.abt-hero h1 {
+  color: #EC5242;
+}
+
 .project1 {
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/assets/images/project1.jpg) 0 0 no-repeat;
   background-size: cover;
   padding: 5em 0;
 }
 
 .project2 {
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/assets/images/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg) 0 0 no-repeat;
   background-size: cover;
   padding: 5em 0;
@@ -192,6 +204,10 @@ img {
 .abt {
   text-align: center;
   height: auto;
+}
+
+.abt h1 {
+  font-size: 2rem;
 }
 
 .tutors img {

@@ -1,0 +1,10 @@
+{
+    "name": "Uchenna tutorial",
+    "short_name": "U-TuT",
+    "description": "An e-learning platform",
+    "lang": "en-US",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "any",
+    "theme_color": "#EC5242"
+  }

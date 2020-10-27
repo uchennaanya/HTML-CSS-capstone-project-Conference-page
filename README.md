@@ -1,14 +1,14 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Uchenna Turorials.
+# Uchenna Tutorials.
 
 ## Definition
 
-This website is an online learning platform that provides user and learners resources for learning and also to the ability to choose and pay for courses online.
+This website is an e-learning platform that provides users and learners resources for learning and also the ability to choose and pay for courses online.
 
 # About the project
 
-This project is about designing/cloning of a e-learning platform website
+This project is about designing/cloning of an e-learning platform or websites
 
 ![screenshot](./assets/images/site-screenshot.png)
 
@@ -52,11 +52,13 @@ The features of this project are listed below:
 
 ## Getting Started
 
-**Just clone this repo and open index.html file in your browser then you are good to go.**
+- Just clone this repo and open index.html file in your browser then you are good to go.
 
-**To get a local copy up and running follow these simple example steps.**
+- To get a local copy up and running follow these simple example steps.
 
-**clone the repo.**
+- clone the repo.
+
+- Look for the index file and double click on it\*\*
 
 ## Authors
 
