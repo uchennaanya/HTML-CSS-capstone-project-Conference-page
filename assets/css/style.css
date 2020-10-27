@@ -101,8 +101,8 @@ img {
     url(/assets/images/hero-img.jpg);
   background-size: cover;
   background-attachment: fixed !important;
-  padding: 8em 0 0 5%;
-  height: 90vh;
+  padding: 4em 0 1em 5%;
+  height: 30%;
   font-weight: 900;
 }
 
@@ -114,6 +114,16 @@ img {
   font-size: 5em;
   font-weight: 900;
   -webkit-text-fill-color: transparent;
+}
+
+.description {
+  width: 95%;
+  border: 4px solid #f1f1f1;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+  z-index: 0;
 }
 
 /* Plan page */
@@ -175,7 +185,7 @@ img {
 }
 
 .step {
-  width: 35%;
+  width: 100%;
   margin: 0 auto;
   border-radius: 40px;
 }
@@ -245,16 +255,6 @@ img {
   margin: 0 auto;
 }
 
-.description {
-  width: 50%;
-  border: 4px solid #f1f1f1;
-  background-color: rgba(0, 0, 0, 0.5) !important;
-  color: #fff;
-  font-weight: 400;
-  font-size: 1rem;
-  z-index: 0;
-}
-
 .featured-course {
   background: url(/assets/images/bg.jpg) 0 0 no-repeat;
   background-size: cover;
@@ -288,10 +288,6 @@ img {
   box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.3);
   opacity: 0.6;
   cursor: pointer;
-}
-
-.course-info {
-  width: 100%;
 }
 
 .view-all-course {
@@ -333,20 +329,47 @@ img {
 /* ------------------------- */
 
 .tutors hr {
-  background-color: red;
-  width: 2%;
+  background-color: #ec5242;
+  width: 5%;
   margin: 0 auto;
-  padding: 0.123em;
+}
+
+.tutors h4 {
+  margin: 0 auto;
 }
 
 .client-section {
-  margin: 0 25%;
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  grid-gap: 1em;
+  padding: 0;
 }
 
-.client-item hr {
+
+
+.client-section h4 {
+  text-align: center;
+  width: 100%;
+  padding: 1em ;
+  color: #f1f1f1;
+}
+
+.client-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.client-item .cols {
+  margin: 1em;
+  width: 30%;
+}
+
+.client-item h4 {
+  text-align: center !important;
+  color: #f1f1f1;
+  margin: 2em auto;
+}
+
+.client-section hr {
   background-color: red;
   width: 2%;
   margin: 0 auto;
@@ -356,26 +379,17 @@ img {
 .footer {
   display: flex;
   align-items: center;
-  padding: 2em 5%;
+  padding: 1em 5%;
   background-color: #f1f1f1;
 }
 
-.featured-course p {
-  width: 100% !important;
-  height: 110px;
-  margin-top: 0 !important;
-}
-
 .featured-course .w {
-  width: 100% !important;
+  width: 80px;
+  padding: 0 0 0 1em;
 }
 
 .wrapper {
   margin: 0;
-}
-
-.featured-course .w {
-  width: 100% !important;
 }
 
 .featured-course {
@@ -383,48 +397,7 @@ img {
   height: auto;
 }
 
-.featured-course p {
-  width: 100% !important;
-  height: auto;
-}
-
-.hero {
-  padding: 1em 1% 2em 1%;
-  height: 50% !important;
-  font-weight: 900;
-}
-
-.description {
-  width: 100%;
-  border: 4px solid #ccc;
-  opacity: 0.6;
-  font-weight: 400;
-  font-size: 0.8em;
-  z-index: 0;
-}
-
-.abt-hero {
-  padding: 3em 0 0 0;
-}
-
-.abt-description {
-  width: 100%;
-}
-
-.client-section {
-  margin: 0 5%;
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
-}
-
-.step {
-  width: 100%;
-  margin: 0 auto;
-  padding: 1em;
-  border-radius: 40px;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) {
   .nav a {
     padding: 0 0 0 0.1em;
     color: dimgray;
@@ -432,18 +405,26 @@ img {
 
   .hero {
     padding: 4em 0 2em 5%;
-    height: 60% !important;
+    height: 90vh !important;
     font-weight: 900;
   }
 
   .featured-course {
-    padding: 1% 2.5% 0 1%;
+    padding: 1% 5% 1%;
     height: auto;
   }
 
+  .featured-course .w {
+    width: 100%;
+    padding: 0;
+  }
+
   .featured-course p {
-    width: 100% !important;
-    height: 260px !important;
+    height: 100%;
+  }
+
+  .tutors {
+    padding: 0 5%;
   }
 
   .description {
@@ -452,5 +433,25 @@ img {
     font-weight: 400;
     font-size: 0.8em;
     z-index: 0;
+  }
+
+  .client-section {
+    padding: 5em 10em;
+  }
+
+  .client-section h4 {
+    text-align: center;
+    width: 100%;
+    padding: 1em ;
+    color: #f1f1f1;
+  }
+
+  .client-item {
+    display: flex;
+  }
+
+  .client-item .cols {
+    margin: 0 1em;
+    width: 20%;
   }
 }
