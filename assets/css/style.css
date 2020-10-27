@@ -1,10 +1,11 @@
 @font-face {
   font-family: "cocogoose";
   src: url("/assets/css/webfontkit/cocogoose_pro-trial-webfont.woff");
-  src: url("/assets/css/webfontkit/cocogoose_pro_ultralight-trial-webfont.woff2")
-      format("woff"),
+  src:
+    url("/assets/css/webfontkit/cocogoose_pro_ultralight-trial-webfont.woff2")
+    format("woff"),
     url("/assets/css/webfontkit/cocogoose_pro_italic-trial-webfont.woff2")
-      format("opentype");
+    format("opentype");
 }
 
 * {
@@ -97,7 +98,8 @@ img {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
     url(/assets/images/hero-img.jpg);
   background-size: cover;
   background-attachment: fixed !important;
@@ -155,7 +157,8 @@ h3 {
   margin: auto;
   min-width: 80%;
   border: 10px solid transparent;
-  border-image: repeating-linear-gradient(
+  border-image:
+    repeating-linear-gradient(
       -45deg,
       #ec5242 0,
       #ec5242 1em,
@@ -178,7 +181,8 @@ h3 {
 /* About page */
 
 .abt-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.63)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.63)),
     url(/assets/images/abt-img.jpg) 0 0 no-repeat;
   background-size: cover;
   background-attachment: fixed !important;
@@ -194,14 +198,16 @@ h3 {
 }
 
 .project1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/assets/images/project1.jpg) 0 0 no-repeat;
   background-size: cover;
   padding: 5em 0;
 }
 
 .project2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/assets/images/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg) 0 0 no-repeat;
   background-size: cover;
   padding: 5em 0;
