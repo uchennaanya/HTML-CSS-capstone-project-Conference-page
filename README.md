@@ -50,6 +50,8 @@ The features of this project are listed below:
 
 [Live Demo Link](https://priceless-williams-b54992.netlify.app/)
 
+[Link to video](https://www.loom.com/share/fbb36d3e6ef24027bdaaeec13ddef5ac)
+
 ## Getting Started
 
 - Just clone this repo and open index.html file in your browser then you are good to go.
