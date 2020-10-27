@@ -37,16 +37,16 @@ body {
 }
 
 .active {
-  color: #EC5242 !important;
+  color: #ec5242 !important;
 }
 
 #myHeader .btn {
-  border: 4px solid #EC5242 !important;
+  border: 4px solid #ec5242 !important;
 }
 
 #myHeader .btn:hover {
   color: #fff !important;
-  background-color: #EC5242;
+  background-color: #ec5242;
 }
 
 a:hover {
@@ -55,7 +55,7 @@ a:hover {
 
 .featured-course a {
   color: #fff !important;
-  background-color: #EC5242;
+  background-color: #ec5242;
   padding: 1em;
 }
 
@@ -64,8 +64,16 @@ a:hover {
   margin: 0 0.2em !important;
 }
 
+.featured-course a:hover {
+  color: #fff !important;
+  background-color: red;
+  -webkit-transition: all 0.2s linear;
+  padding: 1.5em;
+  transition: all 0.2s linear;
+}
+
 .nav li a:hover {
-  color: #EC5242;
+  color: #ec5242;
   margin: 0 0.2em !important;
 }
 
@@ -98,8 +106,9 @@ img {
   font-weight: 900;
 }
 
-.hero h1, h3 {
-  color: #EC5242;
+.hero h1,
+h3 {
+  color: #ec5242;
 }
 
 /* Plan page */
@@ -169,10 +178,7 @@ img {
 /* About page */
 
 .abt-hero {
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.61),
-      rgba(0, 0, 0, 0.63)
-    ),
+  background: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.63)),
     url(/assets/images/abt-img.jpg) 0 0 no-repeat;
   background-size: cover;
   background-attachment: fixed !important;
@@ -184,7 +190,7 @@ img {
 }
 
 .abt-hero h1 {
-  color: #EC5242;
+  color: #ec5242;
 }
 
 .project1 {
@@ -277,14 +283,6 @@ img {
   box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.3);
   opacity: 0.6;
   cursor: pointer;
-}
-
-.featured-course a:hover {
-  color: #fff !important;
-  background-color: red;
-  -webkit-transition: all 0.2s linear;
-  padding: 1.5em;
-  transition: all 0.2s linear;
 }
 
 .course-info {
