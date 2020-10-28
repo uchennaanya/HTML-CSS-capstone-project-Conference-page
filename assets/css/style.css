@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "cocogoose";
   src: url("/assets/css/webfontkit/cocogoose_pro-trial-webfont.woff");
