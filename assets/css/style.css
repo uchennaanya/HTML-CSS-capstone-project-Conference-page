@@ -453,4 +453,11 @@ img {
     margin: 0 1em;
     width: 20%;
   }
+
+  .step {
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 40px;
+  }
+  
 }
