@@ -331,7 +331,7 @@ img {
   }
   .hero {
     padding: 7em 5em;
-    height: 85vh !important;
+    height: 30% !important;
     font-weight: 900;
   }
   .featured-course {
