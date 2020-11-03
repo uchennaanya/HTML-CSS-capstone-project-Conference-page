@@ -372,25 +372,31 @@ img {
   .nav a {
     padding: 0 0 0 0.1em;
   }
+
   .hero {
     padding: 7em 5em;
     height: 30% !important;
     font-weight: 900;
   }
+
   .featured-course {
     padding: 1% 5% 1%;
     height: auto;
   }
+
   .featured-course .w {
     width: 100%;
     padding: 0;
   }
+
   .featured-course p {
     height: 100%;
   }
+
   .tutors {
     padding: 0 5%;
   }
+
   .description {
     width: 50% !important;
     border: 4px solid #ccc;
@@ -398,27 +404,33 @@ img {
     font-size: 0.8em;
     z-index: 0;
   }
+
   .client-section {
     padding: 5em 10em;
   }
+
   .client-section h4 {
     text-align: center;
     width: 100%;
     padding: 1em;
     color: #f1f1f1;
   }
+
   .client-item {
     display: flex;
   }
+
   .client-item .cols {
     margin: 0 1em;
     width: 20%;
   }
+
   .step {
     width: 40%;
     margin: 0 auto;
     border-radius: 40px;
   }
+
   .abt-description {
     width: 50%;
   }
