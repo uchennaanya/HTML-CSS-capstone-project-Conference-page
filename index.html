@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="author" content="Anya Martins Uchenna">
+    <meta name="keyword" content="Conference, Conference meeting, meeting, live conference">
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="U-TuT">
+    <meta name="apple-mobile-web-app-title" content="U-TuT">
+    <meta name="theme-color" content="#EC5242">
+    <meta name="msapplication-navbutton-color" content="#EC5242">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-starturl" content="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>TuT</title>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+
+    <div class="d-none d-lg-block text-right bg-dark text-white top-nav">
+        <a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#">English</a>
+        <a href="#">My Page</a>
+        <a href="#">Logout</a>
+    </div>
+    <header id="myHeader">
+        <div class="bg-white d-flex justify-content-between align-items-center nav-wrapper">
+            <div class="d-none d-md-block">
+                <a href="#">
+                    <img src="assets/images/logo2.png" alt="Uchenna tutorials">
+                </a>
+            </div>
+
+            <nav class="nav navbar navbar-expand-md">
+
+                <div class="d-block toggle float-left">
+                    <a href="#" class="navbar-toggler p-0 ml-n4" data-toggle="collapse"
+                        data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true" focusable="false" width="1em" height="1em"
+                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"
+                            class="iconify font-2x text-dark menu-open" data-icon="dashicons:menu-alt3"
+                            data-inline="false" style="transform: rotate(360deg);">
+                            <path d="M20 5V2H0v3h40zm0 6V8H0v3h40zm0 6v-3H0v3h40z" fill="currentColor"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+                    <ul class="navbar-nav mr-md-5">
+                        <li><a href="#home" class="mx-3 nav-link active">Home</a></li>
+                        <li><a href="#courses" class="mx-3 nav-link">Courses</a></li>
+                        <li><a href="#tutors" class="mx-3 nav-link">Tutors</a></li>
+                        <li><a href="#clients" class="mx-3 nav-link">Clients</a></li>
+                        <li><a href="about.html" class="mx-3 nav-link">About</a></li>
+                    </ul>
+                    <div class="ml-md-5">
+                        <a href="tickets.html" class="btn btn-outline-danger rounded-0 text-danger">Start</a>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+
+    </header>
+
+    <section id="home">
+
+        <div class="hero">
+            <h2 class="font-weight-bold text-danger p-0"> "Your learning starts here" </h2>
+            <h1 class="display-4 text-truncate font-weight-bolder p-0 wow zoomIn">Uchenna Tutorials</h1>
+            <div class="description p-2 bg-light wow zoomIn">
+                <p>Uchenna online tutorial, is your one stop platfofrm for every tech and sciences. This is where
+                    your career start as a professional or beginer, checkout our latest courses. </p>
+            </div>
+            <h3 class="pt-4 font-weight-bolder text-white">99.9 Uptime </h3>
+            <p class="text-white">@Uchenna TuT your covered</p>
+
+        </div>
+    </section>
+
+    <!-- Featured courses -->
+
+    <main class="container-fluid">
+        <section class="row featured-course" id="courses">
+            <h2 class="text-center w-100 pt-5">Featured Courses</h2>
+            <hr class="mb-5 mt-3">
+            <div class="d-md-flex justify-content-center mt-3 wrapper">
+
+                <div
+                    class="cols d-flex flex-md-column justify-content-between d-md-column text-md-center p-3 mx-1 wow zoomIn">
+                    <div class="m-0 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true" focusable="false" width="2em" height="2em"
+                            style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256">
+                            <path
+                                d="M251.172 116.594L139.4 4.828c-6.433-6.437-16.873-6.437-23.314 0l-23.21 23.21l29.443 29.443c6.842-2.312 14.688-.761 20.142 4.693c5.48 5.489 7.02 13.402 4.652 20.266l28.375 28.376c6.865-2.365 14.786-.835 20.269 4.657c7.663 7.66 7.663 20.075 0 27.74c-7.665 7.666-20.08 7.666-27.749 0c-5.764-5.77-7.188-14.235-4.27-21.336l-26.462-26.462l-.003 69.637a19.82 19.82 0 0 1 5.188 3.71c7.663 7.66 7.663 20.076 0 27.747c-7.665 7.662-20.086 7.662-27.74 0c-7.663-7.671-7.663-20.086 0-27.746a19.654 19.654 0 0 1 6.421-4.281V94.196a19.378 19.378 0 0 1-6.421-4.281c-5.806-5.798-7.202-14.317-4.227-21.446L81.47 39.442l-76.64 76.635c-6.44 6.443-6.44 16.884 0 23.322l111.774 111.768c6.435 6.438 16.873 6.438 23.316 0l111.251-111.249c6.438-6.44 6.438-16.887 0-23.324"
+                                fill="#DE4C36" /></svg>
+                    </div>
+
+                    <div class="mt-1 w">
+                        <h5 class=" mr-5 mr-md-0 text-md-center">Git</h5>
+                    </div>
+
+                    <p>Git is a powerful tool for software development it is used for version controling projects and
+                        tracking. </p>
+                </div>
+
+                <div class="cols d-flex flex-md-column justify-content-between text-md-center p-3 mx-1 wow zoomIn">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true" focusable="false" width="2em" height="2em"
+                            style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 255">
+                            <defs>
+                                <linearGradient x1="84.75%" y1="111.399%" x2="58.254%" y2="64.584%"
+                                    id="IconifyId-1754acb3b5d-64d25d-83">
+                                    <stop stop-color="#FB7655" offset="0%" />
+                                    <stop stop-color="#FB7655" offset="0%" />
+                                    <stop stop-color="#E42B1E" offset="41%" />
+                                    <stop stop-color="#900" offset="99%" />
+                                    <stop stop-color="#900" offset="100%" />
+                                </linearGradient>
+                                <linearGradient x1="116.651%" y1="60.89%" x2="1.746%" y2="19.288%"
+                                    id="IconifyId-1754acb3b5d-64d25d-84">
+                                    <stop stop-color="#871101" offset="0%" />
+                                    <stop stop-color="#871101" offset="0%" />
+                                    <stop stop-color="#911209" offset="99%" />
+                                    <stop stop-color="#911209" offset="100%" />
+                                </linearGradient>
+                                <linearGradient x1="75.774%" y1="219.327%" x2="38.978%" y2="7.829%"
+                                    id="IconifyId-1754acb3b5d-64d25d-85">
+                                    <stop stop-color="#871101" offset="0%" />
+                                    <stop stop-color="#871101" offset="0%" />
+                                    <stop stop-color="#911209" offset="99%" />
+                                    <stop stop-color="#911209" offset="100%" />
+                                </linearGradient>
+                                <linearGradient x1="50.012%" y1="7.234%" x2="66.483%" y2="79.135%"
+                                    id="IconifyId-1754acb3b5d-64d25d-86">
+                                    <stop stop-color="#FFF" offset="0%" />
+                                    <stop stop-color="#FFF" offset="0%" />
+                                    <stop stop-color="#E57252" offset="23%" />
+                                    <stop stop-color="#DE3B20" offset="46%" />
+                                    <stop stop-color="#A60003" offset="99%" />
+                                    <stop stop-color="#A60003" offset="100%" />
+                                </linearGradient>
+                                <linearGradient x1="46.174%" y1="16.348%" x2="49.932%" y2="83.047%"
+                                    id="IconifyId-1754acb3b5d-64d25d-87">
+                                    <stop stop-color="#FFF" offset="0%" />
+                                    <stop stop-color="#FFF" offset="0%" />
+                                    <stop stop-color="#E4714E" offset="23%" />
+                                    <stop stop-color="#BE1A0D" offset="56%" />
+                                    <stop stop-color="#A80D00" offset="99%" />
+                                    <stop stop-color="#A80D00" offset="100%" />
+                                </linearGradient>
+                                <linearGradient x1="36.965%" y1="15.594%" x2="49.528%" y2="92.478%"
+                                    id="IconifyId-1754acb3b5d-64d25d-88">
+                                    <stop stop-color="#FFF" offset="0%" />
+                                    <stop stop-color="#FFF" offset="0%" />
+                                    <stop stop-color="#E46342" offset="18%" />
+                                    <stop stop-color="#C82410" offset="40%" />
+                                    <stop stop-color="#A80D00" offset="99%" />
+                                    <stop stop-color="#A80D00" offset="100%" />
+                                </linearGradient>
+                                <linearGradient x1="13.609%" y1="58.346%" x2="85.764%" y2="-46.717%"
+                                    id="IconifyId-1754acb3b5d-64d25d-89">
+                                    <stop stop-color="#FFF" offset="0%" />
+                                    <stop stop-color="#FFF" offset="0%" />
+                                    <stop stop-color="#C81F11" offset="54%" />
+                                    <stop stop-color="#BF0905" offset="99%" />
+                                    <stop stop-color="#BF0905" offset="100%" />
+                                </linearGradient>
+                                <linearGradient x1="27.624%" y1="21.135%" x2="50.745%" y2="79.056%"
+                                    id="IconifyId-1754acb3b5d-64d25d-90">
+                                    <stop stop-color="#FFF" offset="0%" />
+                                    <stop stop-color="#FFF" offset="0%" />
+                                    <stop stop-color="#DE4024" offset="31%" />
+                                    <stop stop-color="#BF190B" offset="99%" />
+                                    <stop stop-color="#BF190B" offset="100%" />
+                                </linearGradient>
+                                <linearGradient x1="-20.667%" y1="122.282%" x2="104.242%" y2="-6.342%"
+                                    id="IconifyId-1754acb3b5d-64d25d-91">
+                                    <stop stop-color="#BD0012" offset="0%" />
+                                    <stop stop-color="#BD0012" offset="0%" />
+                                    <stop stop-color="#FFF" offset="7%" />
+                                    <stop stop-color="#FFF" offset="17%" />
+                                    <stop stop-color="#C82F1C" offset="27%" />
+                                    <stop stop-color="#820C01" offset="33%" />
+                                    <stop stop-color="#A31601" offset="46%" />
+                                    <stop stop-color="#B31301" offset="72%" />
+                                    <stop stop-color="#E82609" offset="99%" />
+                                    <stop stop-color="#E82609" offset="100%" />
+                                </linearGradient>
+                                <linearGradient x1="58.792%" y1="65.205%" x2="11.964%" y2="50.128%"
+                                    id="IconifyId-1754acb3b5d-64d25d-92">
+                                    <stop stop-color="#8C0C01" offset="0%" />
+                                    <stop stop-color="#8C0C01" offset="0%" />
+                                    <stop stop-color="#990C00" offset="54%" />
+                                    <stop stop-color="#A80D0E" offset="99%" />
+                                    <stop stop-color="#A80D0E" offset="100%" />
+                                </linearGradient>
+                                <linearGradient x1="79.319%" y1="62.754%" x2="23.088%" y2="17.888%"
+                                    id="IconifyId-1754acb3b5d-64d25d-93">
+                                    <stop stop-color="#7E110B" offset="0%" />
+                                    <stop stop-color="#7E110B" offset="0%" />
+                                    <stop stop-color="#9E0C00" offset="99%" />
+                                    <stop stop-color="#9E0C00" offset="100%" />
+                                </linearGradient>
+                                <linearGradient x1="92.88%" y1="74.122%" x2="59.841%" y2="39.704%"
+                                    id="IconifyId-1754acb3b5d-64d25d-94">
+                                    <stop stop-color="#79130D" offset="0%" />
+                                    <stop stop-color="#79130D" offset="0%" />
+                                    <stop stop-color="#9E120B" offset="99%" />
+                                    <stop stop-color="#9E120B" offset="100%" />
+                                </linearGradient>
+                                <linearGradient x1="56.57%" y1="101.717%" x2="3.105%" y2="11.993%"
+                                    id="IconifyId-1754acb3b5d-64d25d-95">
+                                    <stop stop-color="#8B2114" offset="0%" />
+                                    <stop stop-color="#8B2114" offset="0%" />
+                                    <stop stop-color="#9E100A" offset="43%" />
+                                    <stop stop-color="#B3100C" offset="99%" />
+                                    <stop stop-color="#B3100C" offset="100%" />
+                                </linearGradient>
+                                <linearGradient x1="30.87%" y1="35.599%" x2="92.471%" y2="100.694%"
+                                    id="IconifyId-1754acb3b5d-64d25d-96">
+                                    <stop stop-color="#B31000" offset="0%" />
+                                    <stop stop-color="#B31000" offset="0%" />
+                                    <stop stop-color="#910F08" offset="44%" />
+                                    <stop stop-color="#791C12" offset="99%" />
+                                    <stop stop-color="#791C12" offset="100%" />
+                                </linearGradient>
+                                <radialGradient cx="32.001%" cy="40.21%" fx="32.001%" fy="40.21%" r="69.573%"
+                                    id="IconifyId-1754acb3b5d-64d25d-97">
+                                    <stop stop-color="#A80D00" offset="0%" />
+                                    <stop stop-color="#A80D00" offset="0%" />
+                                    <stop stop-color="#7E0E08" offset="99%" />
+                                    <stop stop-color="#7E0E08" offset="100%" />
+                                </radialGradient>
+                                <radialGradient cx="13.549%" cy="40.86%" fx="13.549%" fy="40.86%" r="88.386%"
+                                    id="IconifyId-1754acb3b5d-64d25d-98">
+                                    <stop stop-color="#A30C00" offset="0%" />
+                                    <stop stop-color="#A30C00" offset="0%" />
+                                    <stop stop-color="#800E08" offset="99%" />
+                                    <stop stop-color="#800E08" offset="100%" />
+                                </radialGradient>
+                            </defs>
+                            <path d="M197.467 167.764l-145.52 86.41l188.422-12.787L254.88 51.393l-57.414 116.37z"
+                                fill="url(#IconifyId-1754acb3b5d-64d25d-83)" />
+                            <path d="M240.677 241.257L224.482 129.48l-44.113 58.25l60.308 53.528z"
+                                fill="url(#IconifyId-1754acb3b5d-64d25d-84)" />
+                            <path d="M240.896 241.257l-118.646-9.313l-69.674 21.986l188.32-12.673z"
+                                fill="url(#IconifyId-1754acb3b5d-64d25d-85)" />
+                            <path d="M52.744 253.955l29.64-97.1L17.16 170.8l35.583 83.154z"
+                                fill="url(#IconifyId-1754acb3b5d-64d25d-86)" />
+                            <path d="M180.358 188.05L153.085 81.226l-78.047 73.16l105.32 33.666z"
+                                fill="url(#IconifyId-1754acb3b5d-64d25d-87)" />
+                            <path d="M248.693 82.73l-73.777-60.256l-20.544 66.418l94.321-6.162z"
+                                fill="url(#IconifyId-1754acb3b5d-64d25d-88)" />
+                            <path d="M214.191.99L170.8 24.97L143.424.669l70.767.322z"
+                                fill="url(#IconifyId-1754acb3b5d-64d25d-89)" />
+                            <path d="M0 203.372l18.177-33.151l-14.704-39.494L0 203.372z"
+                                fill="url(#IconifyId-1754acb3b5d-64d25d-90)" />
+                            <path
+                                d="M2.496 129.48l14.794 41.963l64.283-14.422l73.39-68.207l20.712-65.787L143.063 0L87.618 20.75c-17.469 16.248-51.366 48.396-52.588 49c-1.21.618-22.384 40.639-32.534 59.73z"
+                                fill="#FFF" />
+                            <path
+                                d="M54.442 54.094c37.86-37.538 86.667-59.716 105.397-40.818c18.72 18.898-1.132 64.823-38.992 102.349c-37.86 37.525-86.062 60.925-104.78 42.027c-18.73-18.885.515-66.032 38.375-103.558z"
+                                fill="url(#IconifyId-1754acb3b5d-64d25d-91)" />
+                            <path
+                                d="M52.744 253.916l29.408-97.409l97.665 31.376c-35.312 33.113-74.587 61.106-127.073 66.033z"
+                                fill="url(#IconifyId-1754acb3b5d-64d25d-92)" />
+                            <path
+                                d="M155.092 88.622l25.073 99.313c29.498-31.016 55.972-64.36 68.938-105.603l-94.01 6.29z"
+                                fill="url(#IconifyId-1754acb3b5d-64d25d-93)" />
+                            <path
+                                d="M248.847 82.833c10.035-30.282 12.35-73.725-34.966-81.791l-38.825 21.445l73.791 60.346z"
+                                fill="url(#IconifyId-1754acb3b5d-64d25d-94)" />
+                            <path d="M0 202.935c1.39 49.979 37.448 50.724 52.808 51.162l-35.48-82.86L0 202.935z"
+                                fill="#9E1209" />
+                            <path
+                                d="M155.232 88.777c22.667 13.932 68.35 41.912 69.276 42.426c1.44.81 19.695-30.784 23.838-48.64l-93.114 6.214z"
+                                fill="url(#IconifyId-1754acb3b5d-64d25d-97)" />
+                            <path
+                                d="M82.113 156.507l39.313 75.848c23.246-12.607 41.45-27.967 58.121-44.42l-97.434-31.428z"
+                                fill="url(#IconifyId-1754acb3b5d-64d25d-98)" />
+                            <path
+                                d="M17.174 171.34l-5.57 66.328c10.51 14.357 24.97 15.605 40.136 14.486c-10.973-27.311-32.894-81.92-34.566-80.814z"
+                                fill="url(#IconifyId-1754acb3b5d-64d25d-95)" />
+                            <path
+                                d="M174.826 22.654l78.1 10.96c-4.169-17.662-16.969-29.06-38.787-32.623l-39.313 21.663z"
+                                fill="url(#IconifyId-1754acb3b5d-64d25d-96)" />
+                        </svg></div>
+
+                    <div class="mr-md-5 mt-1 w">
+                        <h5 class=" mr-5 mr-md-0 text-md-center">Ruby</h5>
+                    </div>
+
+                    <p class="course-info">
+                        When you think of where to from, start from Ruby, its simple and straight to the point
+                    </p>
+                </div>
+                <div class="cols d-flex flex-md-column justify-content-between text-md-center p-3 mx-1 wow zoomIn">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true" focusable="false" width="2em" height="2em"
+                            style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 361">
+                            <path d="M127.844 360.088L23.662 331.166L.445 70.766h255.11l-23.241 260.36l-104.47 28.962z"
+                                fill="#264DE4" />
+                            <path d="M212.417 314.547l19.86-222.49H128V337.95l84.417-23.403z" fill="#2965F1" />
+                            <path d="M53.669 188.636l2.862 31.937H128v-31.937H53.669z" fill="#EBEBEB" />
+                            <path d="M47.917 123.995l2.903 31.937H128v-31.937H47.917z" fill="#EBEBEB" />
+                            <path
+                                d="M128 271.58l-.14.037l-35.568-9.604l-2.274-25.471h-32.06l4.474 50.146l65.421 18.16l.147-.04V271.58z"
+                                fill="#EBEBEB" />
+                            <path d="M60.484 0h38.68v16.176H76.66v16.176h22.506v16.175H60.484V0z" fill="#000" />
+                            <path
+                                d="M106.901 0h38.681v14.066h-22.505v2.813h22.505v32.352h-38.68V34.46h22.505v-2.813H106.9V0z"
+                                fill="#000" />
+                            <path
+                                d="M153.319 0H192v14.066h-22.505v2.813H192v32.352h-38.681V34.46h22.505v-2.813H153.32V0z"
+                                fill="#000" />
+                            <path
+                                d="M202.127 188.636l5.765-64.641H127.89v31.937h45.002l-2.906 32.704H127.89v31.937h39.327l-3.708 41.42l-35.62 9.614v33.226l65.473-18.145l.48-5.396l7.506-84.08l.779-8.576z"
+                                fill="#FFF" /></svg></div>
+
+                    <div class="mr-md-5 mt-1 w">
+                        <h5 class=" mr-5 mr-md-0 text-md-center">Css</h5>
+                    </div>
+
+                    <p class="course-info">Css stand for Cascading stylesheet, just as its name implies, its main
+                        purpose is styling the web
+                        page</p>
+                </div>
+                <div class="cols d-flex flex-md-column justify-content-between text-md-center p-3 mx-1 wow zoomIn">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true" focusable="false" width="2em" height="2em"
+                            style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 361">
+                            <path d="M255.555 70.766l-23.241 260.36l-104.47 28.962l-104.182-28.922L.445 70.766h255.11z"
+                                fill="#E44D26" />
+                            <path d="M128 337.95l84.417-23.403l19.86-222.49H128V337.95z" fill="#F16529" />
+                            <path
+                                d="M82.82 155.932H128v-31.937H47.917l.764 8.568l7.85 88.01H128v-31.937H85.739l-2.919-32.704z"
+                                fill="#EBEBEB" />
+                            <path
+                                d="M90.018 236.542h-32.06l4.474 50.146l65.421 18.16l.147-.04V271.58l-.14.037l-35.568-9.604l-2.274-25.471z"
+                                fill="#EBEBEB" />
+                            <path d="M24.18 0h16.23v16.035h14.847V0h16.231v48.558h-16.23v-16.26H40.411v16.26h-16.23V0z"
+                                fill="#000" />
+                            <path d="M92.83 16.103H78.544V0h44.814v16.103h-14.295v32.455h-16.23V16.103h-.001z"
+                                fill="#000" />
+                            <path
+                                d="M130.47 0h16.923l10.41 17.062L168.203 0h16.93v48.558h-16.164V24.49l-11.166 17.265h-.28L146.35 24.49v24.068h-15.88V0z"
+                                fill="#000" />
+                            <path d="M193.21 0h16.235v32.508h22.824v16.05h-39.06V0z" fill="#000" />
+                            <path
+                                d="M127.89 220.573h39.327l-3.708 41.42l-35.62 9.614v33.226l65.473-18.145l.48-5.396l7.506-84.08l.779-8.576H127.89v31.937z"
+                                fill="#FFF" />
+                            <path d="M127.89 155.854v.078h77.143l.64-7.178l1.456-16.191l.763-8.568H127.89v31.86z"
+                                fill="#FFF" /></svg></div>
+
+                    <div class="mr-md-5 mt-1 w">
+                        <h5 class=" mr-5 mr-md-0 text-md-center">HTML</h5>
+                    </div>
+
+                    <p class="course-info">HTML stands for hypertext markup language, used for structuring the
+                        web page
+                    </p>
+                </div>
+                <div class="cols d-flex flex-md-column justify-content-between text-md-center p-3 mx-1 wow zoomIn">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true" focusable="false" width="2em" height="2em"
+                            style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                            <g fill="none" fill-rule="evenodd">
+                                <path fill="#F1DC50" d="M0 0h24v24H0z" />
+                                <path stroke="#333" stroke-width="2"
+                                    d="M12 11v8c0 .876-.523 2-2 2c-2.385 0-2.5-2-2.5-2m13.29-5.484c-.6-1.01-1.396-1.516-2.386-1.516C16.856 12 16 13 16 14s.5 2 2.508 2.5c1.278.318 2.492 1 2.492 2.5s-1.315 2-2.5 2c-1.514 0-2.514-.667-3-2" />
+                            </g>
+                        </svg></div>
+                    <div class="mr-md-5 mt-1 w">
+                        <h5 class=" mr-5 mr-md-0 text-md-center">JS</h5>
+                    </div>
+
+                    <p class="course-info">if the a user must interact with the your web app, then you learn Javascript,
+                        this is why it is called language of the web </p>
+                </div>
+
+            </div>
+
+            <h4 class="text-center w-100 py-5 text-white">
+                <a href="#" class="btn btn-danger text-white rounded-0 font-weight-bolder">
+                    View all Courses
+                </a>
+            </h4>
+        </section>
+
+        <!-- Featured tutors -->
+
+        <section class="row tutors mt-5 wrapper" id="tutors">
+            <h4 class="font-weight-bold mt-md-5 w-100 text-center">Featured Tutors</h4>
+            <hr class="my-3">
+            <div class="d-md-flex m-2">
+                <div class="d-flex bg-light p-0 m-0 mt-2 wow zoomIn">
+                    <div class="col-4 col-md-4">
+                        <figure class="tutors-img">
+                            <img src="assets/images/oie_21142855cgLZ73on.jpg" alt="tutor 6 John">
+                        </figure>
+                    </div>
+                    <div class="col-8 col-md-8">
+                        <h5 class="font-weight-bolder">John </h5>
+                        <small>Head of student affairs at Uchenna Tut</small>
+                        <p>
+                            John is a seasoned software developer with
+                            10 years of industry experience and he is an insturctor here at Uchenna Tut.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="d-flex bg-light p-0 col-md-6 m-0 mt-2 wow zoomIn">
+                    <div class="col-4 col-md-4">
+                        <figure class="tutors-img">
+                            <img src="assets/images/tutor1.jpg" alt="tutor 1 Kelvin">
+                        </figure>
+
+                    </div>
+                    <div class="col-8 col-md-8">
+                        <h5 class="font-weight-bolder">Kelvin</h5>
+                        <small>Head of Student success at Uchenna Tut</small>
+                        <p>
+                            Kelvin is a seasoned instuctor with 5 years teach and industry experience, he has worked
+                            for big brand globaly and locally.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-md-flex m-2">
+
+                <div class="d-flex bg-light col-md-6 p-0 m-0 mt-2 wow zoomIn">
+                    <div class="col-4 col-md-4">
+                        <figure class="tutors-img">
+                            <img src="assets/images/tutor7.jpg" alt="tuto 2 Oliver">
+                        </figure>
+
+                    </div>
+                    <div class="col-8 col-md-8">
+
+                        <h5 class="font-weight-bolder">Oliver</h5>
+                        <small>Web Developer, Digital marketer</small>
+                        <p>
+                            As an industralist and an experience
+                            instrudtor Oliver have trained tones of tech folks in his community and beyond
+                        </p>
+                    </div>
+                </div>
+
+                <div class="d-flex p-0 bg-light col-md-6 m-0 mt-2 wow zoomIn">
+
+                    <div class="col-4 col-md-4">
+                        <figure class="tutors-img">
+                            <img src="assets/images/tutor_onez.jpg" alt="Tuto 3 Onez">
+                        </figure>
+
+                    </div>
+                    <div class="col-8 col-md-8">
+                        <h5 class="font-weight-bolder">Onez </h5>
+                        <small>Admissions at Uchenna Tut</small>
+                        <p>
+                            Onez is one ofthe intructors we value here at Uchenna Tuts he has won so many awards in the
+                            industry and have head a lot of department in Uchenna Tut
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-md-flex m-2">
+                <div class="d-flex p-0 bg-light col-md-6 m-0 mt-2 wow zoomIn">
+                    <div class="col-4 col-md-4">
+                        <figure class="tutors-img">
+                            <img src="assets/images/tutor6.jpg" alt="tutor 4 Mike">
+                        </figure>
+                    </div>
+                    <div class="col-8 col-md-8">
+                        <h5 class="font-weight-bolder">Mike</h5>
+                        <small>Admission Officer at Uchenna Tut</small>
+                        <p>
+                            Mike is Prof when it comes to tech and
+                            science he studied computer engineering at Havard and have gone for too many professional
+                            courses
+                        </p>
+                    </div>
+                </div>
+
+                <div class="d-flex word-wrap col-md-6 bg-light mt-2 wow zoomIn">
+
+                    <div class="col-4 col-md-4">
+                        <figure class="tutors-img">
+                            <img src="assets/images/adams.jpg" alt="tutor 5 Adams">
+                        </figure>
+                    </div>
+                    <div class="col-8 col-md-8">
+                        <h5 class="font-weight-bolder">Adams</h5>
+                        <small>Exams and record at Uchenna Tut</small>
+                        <p>
+                            Adams the Pro as we call him at Uchenna Tut
+                            is one the force you can recon we you think of tech
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="row bg-dark client-section mt-md-5" id="clients">
+            <h4>
+                Clients
+            </h4>
+            <hr class="mb-2 mt-md-n3">
+            <div class="client-item">
+
+                <a href="#" class="cols wow zoomIn">
+                    <figure>
+                        <img src="assets/images/google.png" alt="google">
+                    </figure>
+                </a>
+
+                <a href="#" class="cols wow zoomIn">
+                    <figure>
+                        <img src="assets/images/mozilla.png" alt="mozilla">
+                    </figure>
+                </a>
+
+                <a href="#" class="cols wow zoomIn">
+                    <figure>
+                        <img src="assets/images/microsoft.png" class="clients-link" alt="microsoft">
+                    </figure>
+                </a>
+
+                <a href="#" class="cols wow zoomIn">
+                    <figure>
+                        <img src="assets/images/twitter.png" class="" alt="twitter">
+                    </figure>
+                </a>
+
+                <a href="#" class="cols wow zoomIn">
+                    <figure>
+                        <img src="assets/images/airbnb.png" alt="">
+                    </figure>
+                </a>
+
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/js.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <footer class="footer">
+        <div class="col-md-2 text-truncate"><a href="#"><img src="assets/images/logo2.png" alt="Footer logo"></a></div>
+        <div class="col-md-8 pt-4 ml-md-5 pl-md-5 ml-lg-3 pl-lg-0">
+            <p>2020 Global Uchenna TuT. Some Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

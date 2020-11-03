@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="author" content="Anya Martins Uchenna">
+    <meta name="keyword" content="Conference, Conference meeting, meeting, live conference">
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="U-TuT">
+    <meta name="apple-mobile-web-app-title" content="U-TuT">
+    <meta name="theme-color" content="#EC5242">
+    <meta name="msapplication-navbutton-color" content="#EC5242">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-starturl" content="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <title>TuT</title>
+</head>
+
+<body class="container-fluid p-0">
+
+    <div class="d-none d-md-block text-right bg-dark text-white top-nav">
+       <a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#">English</a><a href="#">My Page</a>
+        <a href="#">Logout</a>
+    </div>
+    <header id="myHeader">
+        <div class="bg-white d-flex justify-content-between align-items-center nav-wrapper">
+            <div class="d-none d-md-block">
+                <a href="#">
+                    <img src="assets/images/logo2.png" alt="Uchenna tutorials">
+                </a>
+            </div>
+
+            <nav class="nav navbar navbar-expand-md">
+
+                <div class="d-block toggle float-left">
+                    <a href="#" class="navbar-toggler p-0 ml-n4" data-toggle="collapse"
+                        data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true" focusable="false" width="1em" height="1em"
+                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"
+                            class="iconify font-2x text-dark menu-open" data-icon="dashicons:menu-alt3"
+                            data-inline="false" style="transform: rotate(360deg);">
+                            <path d="M20 5V2H0v3h40zm0 6V8H0v3h40zm0 6v-3H0v3h40z" fill="currentColor"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+                    <ul class="navbar-nav mr-md-5">
+                        <li><a href="index.html" class="mx-3 nav-link">Home</a></li>
+                        <li><a href="index.html#courses" class="mx-3 nav-link">Courses</a></li>
+                        <li><a href="index.html#tutors" class="mx-3 nav-link">Tutors</a></li>
+                        <li><a href="index.html#clients" class="mx-3 nav-link">Clients</a></li>
+                        <li><a href="about.html" class="mx-3 nav-link">About</a></li>
+
+                    </ul>
+                    <div class="ml-md-5">
+                        <a href="tickets.html" class="btn btn-outline-danger rounded-0 text-danger">Start</a>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+
+    </header>
+
+    <div>
+        <div class="bg-light abt py-5 px-3">
+            <h1 class="font-weight-bold p-0"> Select Plan </h1>
+            <hr class="mb-5">
+            <div class="step py-2 mx-auto border"> <span class="square p-1 bg-danger"></span> <span
+                    class="text-danger step-text mr-1 step-text pl-2">Step 1</span>
+                Please carefully select the plan that is best for you</div>
+
+            <div class="col-md-8 offset-md-2 p-0 plan my-5 table-responsive">
+                <table class="table table-bordered">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Plan</th>
+                            <th colspan="2">Anually</th>
+                            <th>Monthly</th>
+                            <th>Weekly</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Basic</td>
+                            <td>
+                                <h4 class="text-danger">$10</h4>
+                                <input type="radio" name="price">
+
+                            <td>
+                                <h4 class="text-danger">$10</h4>
+                                <input type="radio" name="price">
+                            </td>
+                            <td>
+                                <h4 class="text-danger ">$10</h4>
+                                <input type="radio" name="price">
+                            </td>
+                            <td>
+                                <h4 class="text-danger">$3</h4>
+                                <input type="radio" name="price">
+
+                        </tr>
+                        <tr>
+                            <td>Intermediate</td>
+                            <td>
+                                <h4 class="text-danger">$5</h4>
+                                <input type="radio" name="price">
+                            </td>
+
+                            <td>
+                                <h4 class="text-danger">$7</h4>
+                                <input type="radio" name="price">
+                            </td>
+                            <td>
+                                <h4 class="text-danger">$9</h4>
+                                <input type="radio" name="price">
+                            </td>
+                            <td>
+                                <h4 class="text-danger">$10</h4>
+                                <input type="radio" name="price">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Advance</td>
+                            <td>
+                                <h4 class="text-danger">$6</h4>
+                                <input type="radio" name="price">
+                            </td>
+
+                            <td>
+                                <h4 class="text-danger">$10</h4>
+                                <input type="radio" name="price">
+                            </td>
+                            <td>
+                                <h4 class="text-danger">$21</h4>
+                                <input type="radio" name="price">
+                            </td>
+                            <td>
+                                <h4 class="text-danger">$9</h4>
+                                <input type="radio" name="price">
+                            </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="pt-2 mx-auto cube text-center text-white mt-n4 bg-danger"><span class="v"><svg
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                focusable="false" width="2em" height="2em"
+                style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
+                <path d="M4.22 10.78l-1.44 1.44l12.5 12.5l.72.686l.72-.687l12.5-12.5l-1.44-1.44L16 22.564L4.22 10.78z"
+                    fill="white" /></svg></span></div>
+
+    <main>
+        <section class="abt py-5">
+            <h2>Select Prefrence</h2>
+            <hr>
+            <div class="col-md-10 offset-md-1 table-responsive mt-5">
+                <table class="table table-bordered">
+                    <thead class="bg-light">
+                        <tr>
+                            <td colspan="5">Start</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>menu 1 <input type="radio" name="preference"></td>
+                            <td>menu 2 <input type="radio" name="preference"></td>
+                            <td>menu 3 <input type="radio" name="preference"></td>
+                            <td>menu 4 <input type="radio" name="preference"></td>
+                            <td>menu 5 <input type="radio" name="preference"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-md-10 offset-md-1 table-responsive mt-5">
+                <table class="table table-bordered">
+                    <thead class="bg-light">
+                        <tr>
+                            <td colspan="5">Start</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>menu 1 <input type="radio" name="preference"></td>
+                            <td>menu 2 <input type="radio" name="preference"></td>
+                            <td>menu 3 <input type="radio" name="preference"></td>
+                            <td>menu 4 <input type="radio" name="preference"></td>
+                            <td>menu 5 <input type="radio" name="preference"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <button type="button" class="btn btn-danger rounded-0 px-5 py-3 mt-3"> Start Now </button>
+        </section>
+    </main>
+
+    <script src="assets/js/js.js"></script>
+    <footer class="footer">
+        <div class="col-md-2 text-truncate"><a href="index.html"><img src="assets/images/logo2.png"
+                    alt="Footer logo"></a></div>
+        <div class="col-md-8 pt-4 ml-md-5 pl-md-5 ml-lg-3 pl-lg-0">
+            <p>2020 Global Uchenna TuT. Some Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
